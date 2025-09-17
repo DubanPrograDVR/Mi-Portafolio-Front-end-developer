@@ -37,7 +37,7 @@ export default function Header({
         </button>
       </div>
       {open && (
-        <div className="md:hidden fixed inset-0 bg-gray-900 flex flex-col items-center justify-center z-40">
+        <div className="md:hidden absolute top-full left-0 w-full bg-gray-900/95 flex flex-col items-center py-12 z-[60]">
           <nav className="flex flex-col items-center space-y-8">
             {navLinks.map((l) => (
               <a

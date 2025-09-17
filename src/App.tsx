@@ -6,6 +6,9 @@ import About from "./sections/About";
 import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
+import Timeline from "./sections/Timeline";
+import MoreAboutMe from "./sections/MoreAboutMe";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 export default function App() {
   const navLinks = [
@@ -26,6 +29,8 @@ export default function App() {
       <main className="container mx-auto px-6 py-12 md:py-20">
         <Hero onNavLinkClick={onNavLinkClick} />
         <About />
+        <MoreAboutMe />
+        <Timeline />
         <Skills />
         <Projects />
         <Contact />
@@ -33,13 +38,14 @@ export default function App() {
       <footer className="bg-gray-800/50">
         <div className="container mx-auto px-6 py-6 text-center text-gray-500">
           <p>
-            &copy; {new Date().getFullYear()} [Tu Nombre]. Todos los derechos
-            reservados.
+            &copy; {new Date().getFullYear()} Duban Alejandro Vasquez Romero.
+            Todos los derechos reservados.
           </p>
           <p className="text-sm mt-1">Diseñado con ❤️, React y Tailwind CSS.</p>
         </div>
       </footer>
       <ScrollToTopButton />
+      <WhatsAppButton />
     </div>
   );
 }
