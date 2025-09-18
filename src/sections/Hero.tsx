@@ -18,7 +18,7 @@ export default function Hero({
       id="hero"
       className="text-center min-h-[70vh] flex flex-col justify-center items-center relative z-10">
       <h1 className="text-4xl md:text-6xl font-extrabold mb-4">
-        <span className="block">Hola, soy Duban Alejandro Vasquez Romero</span>
+        <span className="block">Hola, soy Dubán Alejandro Vásquez Romero</span>
         <span className="block text-cyan-400 mt-2 h-16 md:h-20">
           {txt}
           <span className="animate-ping">_</span>

@@ -1,4 +1,6 @@
 import AnimatedSection from "../components/AnimatedSection";
+import foto_with_guitar from "../assets/img/Duban_descaro-53.jpg";
+import foto from "../assets/img/Duban_descaro-39.jpg";
 
 const MoreAboutMe = () => {
   return (
@@ -33,12 +35,12 @@ const MoreAboutMe = () => {
         {/* Fotos */}
         <div className="grid grid-cols-2 gap-4 w-full md:w-1/2">
           <img
-            src="/assets/boxeo.jpg"
+            src={foto_with_guitar}
             alt="Entrenando boxeo"
             className="rounded-2xl shadow-lg object-cover h-56 md:h-72 hover:scale-105 transition-transform duration-300"
           />
           <img
-            src="/assets/musica.jpg"
+            src={foto}
             alt="Tocando guitarra"
             className="rounded-2xl shadow-lg object-cover h-56 md:h-72 hover:scale-105 transition-transform duration-300"
           />

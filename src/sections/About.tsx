@@ -1,4 +1,7 @@
 import AnimatedSection from "../components/AnimatedSection";
+import CV from "../assets/Duban_Alejandro_Vasquez_Romero cv trabajo.pdf";
+import foto1 from "../assets/img/Ruta1.jpg";
+import foto2 from "../assets/img/Ruta2.jpg";
 
 export default function About() {
   return (
@@ -7,12 +10,12 @@ export default function About() {
         {/* Fotos (lado izquierdo en desktop) */}
         <div className="grid grid-cols-2 gap-4 w-full md:w-1/2">
           <img
-            src="/assets/profile1.jpg"
+            src={foto1}
             alt="Duban Alejandro trabajando en proyectos"
             className="rounded-2xl shadow-lg object-cover w-full h-64 md:h-80 hover:scale-105 transition-transform duration-300"
           />
           <img
-            src="/assets/profile2.jpg"
+            src={foto2}
             alt="Duban Alejandro presentando un proyecto"
             className="rounded-2xl shadow-lg object-cover w-full h-64 md:h-80 hover:scale-105 transition-transform duration-300"
           />
@@ -46,8 +49,8 @@ export default function About() {
 
           {/* Botón para descargar CV */}
           <a
-            href="/CV_DubanAlejandro.pdf"
-            download
+            href={CV}
+            download="CV_DubanAlejandro.pdf"
             className="inline-block bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-6 py-3 rounded-full shadow-md transition-transform duration-300 hover:scale-105">
             Descargar CV
           </a>
