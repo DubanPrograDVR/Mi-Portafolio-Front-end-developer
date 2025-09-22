@@ -1,5 +1,6 @@
 import AnimatedSection from "../components/AnimatedSection";
 import { Mail, Github, Linkedin } from "lucide-react";
+import ContactForm from "../components/ContactForm";
 
 export default function Contact() {
   return (
@@ -36,43 +37,8 @@ export default function Contact() {
           </a>
         </div>
 
-        {/* Formulario */}
-        <form
-          action="https://formspree.io/f/xandglae" // <- cámbialo si usas Formspree
-          method="POST"
-          className="space-y-6 max-w-2xl mx-auto">
-          <div>
-            <input
-              type="text"
-              name="name"
-              placeholder="Tu nombre"
-              required
-              className="w-full px-4 py-3 rounded-lg bg-gray-800 text-gray-200 focus:outline-none focus:ring-2 focus:ring-cyan-500"
-            />
-          </div>
-          <div>
-            <input
-              type="email"
-              name="email"
-              placeholder="Tu correo"
-              required
-              className="w-full px-4 py-3 rounded-lg bg-gray-800 text-gray-200 focus:outline-none focus:ring-2 focus:ring-cyan-500"
-            />
-          </div>
-          <div>
-            <textarea
-              name="message"
-              placeholder="Tu mensaje"
-              rows={5}
-              required
-              className="w-full px-4 py-3 rounded-lg bg-gray-800 text-gray-200 focus:outline-none focus:ring-2 focus:ring-cyan-500"></textarea>
-          </div>
-          <button
-            type="submit"
-            className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-6 rounded-lg transition-transform hover:scale-105">
-            Enviar mensaje
-          </button>
-        </form>
+        {/* Formulario como componente */}
+        <ContactForm />
       </div>
     </AnimatedSection>
   );

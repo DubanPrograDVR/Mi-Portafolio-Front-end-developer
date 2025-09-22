@@ -33,6 +33,15 @@ const projects: Project[] = [
     link: "https://tienda-venta-muebles.netlify.app/",
     repo: "https://github.com/DubanPrograDVR/Tienda-de-Muebles",
   },
+
+   {
+    title: "TeachPro",
+    description:
+      "Sitio web de tienda de audífonos modernos, construido con HTML y CSS. El proyecto destaca por un diseño limpio y responsive que ofrece una experiencia fluida en móviles, tablets y escritorio",
+    tags: ["Html", "CSS"],
+    link: "https://tienda-teachpro.netlify.app/",
+    repo: "https://github.com/DubanPrograDVR/Teach-Pro",
+  },
 ];
 
 export default projects;
