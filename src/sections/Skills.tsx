@@ -19,7 +19,9 @@ export default function Skills() {
                 key={idx}
                 className="flex flex-col items-center justify-center bg-gray-800/70 rounded-lg p-6 shadow-md hover:shadow-cyan-500/30 hover:scale-105 transition-transform duration-300">
                 <Icon className="text-cyan-400 text-4xl mb-3" />
-                <p className="text-gray-200 font-medium">{skill.name}</p>
+                <p className="text-gray-200 font-medium text-center">
+                  {skill.name}
+                </p>
               </div>
             );
           })}

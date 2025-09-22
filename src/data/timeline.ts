@@ -11,7 +11,7 @@ const timeline = [
       "Finalicé mis estudios en INACAP Curicó, fortaleciendo mis conocimientos en desarrollo web, bases de datos y proyectos tecnológicos.",
   },
   {
-    year: "2024",
+    year: "2025",
     title: "Proyecto Ruta Accesible",
     description:
       "Desarrollé en conjunto con la Municipalidad de Curicó el aplicativo inclusivo 'Ruta Accesible', integrando React, Flask, Supabase y Google Maps API.",
