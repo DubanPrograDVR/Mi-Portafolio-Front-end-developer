@@ -23,7 +23,15 @@ const projects: Project[] = [
       "Mi portafolio profesional, donde muestro mis proyectos, habilidades y trayectoria.",
     tags: ["React", "Tailwind CSS", "Vite"],
     link: "https://midominio.com",
-    repo: "https://github.com/tuusuario/mi-portafolio",
+    repo: "https://github.com/DubanPrograDVR/Mi-Portafolio-Front-end-developer",
+  },
+  {
+    title: "Tienda De Muebles",
+    description:
+      "Tienda de muebles desarrollada con HTML y CSS, enfocada en un diseño moderno y totalmente responsive que se adapta a distintos dispositivos",
+    tags: ["Html", "CSS"],
+    link: "https://tienda-venta-muebles.netlify.app/",
+    repo: "https://github.com/DubanPrograDVR/Tienda-de-Muebles",
   },
 ];
 

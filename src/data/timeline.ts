@@ -14,7 +14,7 @@ const timeline = [
     year: "2025",
     title: "Proyecto Ruta Accesible",
     description:
-      "Desarrollé en conjunto con la Municipalidad de Curicó el aplicativo inclusivo 'Ruta Accesible', integrando React, Flask, Supabase y Google Maps API.",
+      "Desarrollé en conjunto con la Municipalidad de Curicó el aplicativo inclusivo 'Ruta Accesible', integrando React, TypeSript, Supabase y Google Maps API.",
   },
   {
     year: "2025",
