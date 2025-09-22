@@ -1,69 +1,40 @@
-# React + TypeScript + Vite
+# 🌐 Portafolio Personal - Duban Alejandro Vásquez Romero
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es mi portafolio personal desarrollado con **React + Vite + TypeScript + Tailwind CSS**.  
+Aquí muestro mis proyectos, habilidades técnicas y trayectoria como **Desarrollador Front-End**.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías utilizadas
+- ⚛️ React (con Vite + TypeScript)
+- 🎨 Tailwind CSS
+- 🗄️ Supabase (para proyectos que lo requieran)
+- 🌍 APIs externas (Google Maps, Firebase, etc.)
+- ⚡ Framer Motion (animaciones)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Secciones principales
+- **Hero** → Presentación inicial con animación de typing.
+- **Sobre mí** → Quién soy y mi experiencia.
+- **Más sobre mí** → Pasiones como el boxeo y la música (con links a mi trabajo musical 🎶).
+- **Trayectoria (Timeline)** → Línea de tiempo de mis hitos académicos y profesionales.
+- **Habilidades técnicas** → Skills en tecnología con íconos y diseño moderno.
+- **Proyectos** → Tarjetas interactivas con links a demos y repositorios.
+- **Contacto** → Formulario funcional (Formspree) y enlaces a correo, LinkedIn, GitHub y WhatsApp.
 
-## Expanding the ESLint configuration
+## 📸 Vista previa
+![Preview del Portafolio](./public/preview.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Instalación y uso
+Si deseas probarlo en local:
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+```bash
+# Clonar el repositorio
+git clone https://github.com/tuusuario/mi-portafolio.git
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+# Entrar a la carpeta
+cd mi-portafolio
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# Instalar dependencias
+npm install
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+# Correr en modo desarrollo
+npm run dev
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
