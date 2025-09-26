@@ -50,7 +50,7 @@ export default function Header({
           ))}
           {/* CTA */}
           <a
-            href="/CV_DubanAlejandro.pdf"
+            href={CV}
             download="CV_DubanAlejandro.pdf"
             className="ml-4 bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-lg shadow-lg transition">
             Descargar CV
