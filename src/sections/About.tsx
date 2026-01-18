@@ -22,7 +22,9 @@ export default function About() {
           viewport={{ once: true }}
           className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="gradient-text-cyan">Sobre mí</span>
+            <span className="bg-gradient-to-r from-cyan-400 to-cyan-500 bg-clip-text text-transparent">
+              Sobre mí
+            </span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto rounded-full" />
         </motion.div>
@@ -72,7 +74,6 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="space-y-6">
-            
             {/* Highlights */}
             <div className="grid grid-cols-1 gap-3 mb-6">
               {highlights.map((item, idx) => (
@@ -82,7 +83,7 @@ export default function About() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: idx * 0.1 }}
-                  className="flex items-center gap-3 glass p-3 rounded-lg border border-cyan-400/20 hover:border-cyan-400/40 transition-colors">
+                  className="flex items-center gap-3 bg-white/5 backdrop-blur-md p-3 rounded-lg border border-cyan-400/20 hover:border-cyan-400/40 transition-colors">
                   <div className={`p-2 rounded-lg bg-${item.color}-500/20`}>
                     <item.icon className={`text-${item.color}-400`} size={20} />
                   </div>
@@ -95,32 +96,42 @@ export default function About() {
             <div className="space-y-4 text-gray-300 leading-relaxed">
               <p className="text-lg">
                 ¡Hola! Soy{" "}
-                <span className="gradient-text-cyan font-bold text-xl">
+                <span className="bg-gradient-to-r from-cyan-400 to-cyan-500 bg-clip-text text-transparent font-bold text-xl">
                   Duban Alejandro Vásquez Romero
                 </span>
                 , desarrollador Front-End egresado de Ingeniería en Informática.
               </p>
-              
+
               <p>
                 Me apasiona construir{" "}
                 <span className="text-cyan-400 font-semibold">
-                  interfaces accesibles, modernas y con gran experiencia de usuario
+                  interfaces accesibles, modernas y con gran experiencia de
+                  usuario
                 </span>
-                . Cada proyecto es una oportunidad para crear soluciones que impacten positivamente.
+                . Cada proyecto es una oportunidad para crear soluciones que
+                impacten positivamente.
               </p>
-              
+
               <p>
-                Durante mi práctica profesional desarrollé el aplicativo inclusivo{" "}
-                <span className="text-purple-400 font-semibold">"Ruta Accesible"</span>{" "}
+                Durante mi práctica profesional desarrollé el aplicativo
+                inclusivo{" "}
+                <span className="text-purple-400 font-semibold">
+                  "Ruta Accesible"
+                </span>{" "}
                 en colaboración con la Municipalidad de Curicó, integrando{" "}
-                <span className="text-cyan-400">Google Maps, accesibilidad y diseño inclusivo</span>.
+                <span className="text-cyan-400">
+                  Google Maps, accesibilidad y diseño inclusivo
+                </span>
+                .
               </p>
-              
+
               <p>
                 Además de programar, disfruto del{" "}
                 <span className="text-pink-400">boxeo</span>, la{" "}
                 <span className="text-purple-400">música</span> y seguir{" "}
-                <span className="text-cyan-400">aprendiendo nuevas tecnologías</span>{" "}
+                <span className="text-cyan-400">
+                  aprendiendo nuevas tecnologías
+                </span>{" "}
                 para crecer como profesional.
               </p>
             </div>

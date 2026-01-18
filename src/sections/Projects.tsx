@@ -14,7 +14,9 @@ export default function Projects() {
           viewport={{ once: true }}
           className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="gradient-text-cyan">Mis Proyectos</span>
+            <span className="bg-gradient-to-r from-cyan-400 to-cyan-500 bg-clip-text text-transparent">
+              Mis Proyectos
+            </span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto rounded-full mb-4" />
           <p className="text-gray-400 max-w-2xl mx-auto">

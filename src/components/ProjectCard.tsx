@@ -42,11 +42,11 @@ export default function ProjectCard({ project }: { project: Project }) {
         ref={ref}
         onMouseMove={onMove}
         onMouseLeave={onLeave}
-        className="relative glass-strong rounded-2xl overflow-hidden border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300 h-full flex flex-col"
+        className="relative bg-white/5 backdrop-blur-xl rounded-2xl overflow-hidden border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300 h-full flex flex-col"
         style={{ transformStyle: "preserve-3d" }}>
         {/* Imagen de previsualización */}
         {project.image && (
-          <div className="relative w-full h-48 overflow-hidden bg-gray-800/50">
+          <div className="relative w-full h-64 md:h-72 overflow-hidden bg-gray-800/50">
             <img
               src={project.image}
               alt={`Previsualización de ${project.title}`}
@@ -57,7 +57,7 @@ export default function ProjectCard({ project }: { project: Project }) {
             <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
 
             {/* Badge de estado (opcional) */}
-            <div className="absolute top-4 left-4 px-3 py-1 glass-strong rounded-full text-xs font-semibold text-cyan-400 border border-cyan-400/30">
+            <div className="absolute top-4 left-4 px-3 py-1 bg-white/5 backdrop-blur-md rounded-full text-xs font-semibold text-cyan-400 border border-cyan-400/30">
               ✨ Proyecto Destacado
             </div>
           </div>
@@ -74,7 +74,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         <div className="relative z-10 p-8 flex-1 flex flex-col">
           {/* Título del proyecto */}
           <motion.h3
-            className="text-2xl font-bold mb-3 gradient-text-cyan"
+            className="text-2xl font-bold mb-3 bg-gradient-to-r from-cyan-400 to-cyan-500 bg-clip-text text-transparent"
             style={{ transform: "translateZ(60px)" }}
             whileHover={{ scale: 1.05 }}>
             {project.title}
@@ -128,7 +128,7 @@ export default function ProjectCard({ project }: { project: Project }) {
                 rel="noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="flex items-center gap-2 px-4 py-2.5 glass border border-gray-600 hover:border-cyan-400/50 text-gray-300 hover:text-cyan-400 rounded-lg font-semibold transition-all">
+                className="flex items-center gap-2 px-4 py-2.5 bg-white/5 backdrop-blur-md border border-gray-600 hover:border-cyan-400/50 text-gray-300 hover:text-cyan-400 rounded-lg font-semibold transition-all">
                 <Github size={18} />
                 Código
               </motion.a>

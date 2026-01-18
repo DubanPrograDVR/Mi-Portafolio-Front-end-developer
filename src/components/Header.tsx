@@ -44,7 +44,9 @@ export default function Header({
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
       className={`sticky top-0 z-50 transition-all duration-300 ${
-        scrolled ? "glass-strong shadow-lg shadow-black/20" : "bg-transparent"
+        scrolled
+          ? "bg-white/5 backdrop-blur-xl shadow-lg shadow-black/20"
+          : "bg-transparent"
       }`}>
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo mejorado */}
@@ -65,7 +67,7 @@ export default function Header({
               transition={{ duration: 2, repeat: Infinity }}
             />
           </div>
-          <span className="gradient-text-cyan hidden sm:inline">
+          <span className="bg-gradient-to-r from-cyan-400 to-cyan-500 bg-clip-text text-transparent hidden sm:inline">
             Duban Alejandro
           </span>
         </motion.a>
@@ -113,7 +115,7 @@ export default function Header({
           onClick={() => setOpen(!open)}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          className="md:hidden z-50 p-2 rounded-lg glass-strong border border-cyan-400/30">
+          className="md:hidden z-50 p-2 rounded-lg bg-white/5 backdrop-blur-md border border-cyan-400/30">
           <AnimatePresence mode="wait">
             {open ? (
               <motion.div
@@ -163,7 +165,7 @@ export default function Header({
                   transition={{ delay: idx * 0.1 }}
                   className={`text-3xl font-bold transition-colors ${
                     activeSection === l.href
-                      ? "gradient-text-cyan"
+                      ? "bg-gradient-to-r from-cyan-400 to-cyan-500 bg-clip-text text-transparent"
                       : "text-gray-300 hover:text-cyan-400"
                   }`}>
                   {l.label}

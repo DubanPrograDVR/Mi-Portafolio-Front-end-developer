@@ -34,7 +34,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="glass-strong p-8 rounded-2xl border border-cyan-400/20">
+    <div className="bg-white/5 backdrop-blur-xl p-8 rounded-2xl border border-cyan-400/20">
       <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
         <MessageSquare className="text-cyan-400" size={24} />
         Envíame un mensaje
@@ -91,7 +91,7 @@ export default function ContactForm() {
             placeholder="Cuéntame sobre tu proyecto o propuesta..."
             rows={5}
             required
-            className="w-full px-4 py-3 rounded-lg glass border border-gray-600 focus:border-cyan-400 text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 transition-all resize-none"
+            className="w-full px-4 py-3 rounded-lg bg-white/5 backdrop-blur-md border border-gray-600 focus:border-cyan-400 text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 transition-all resize-none"
           />
         </div>
 

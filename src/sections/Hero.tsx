@@ -55,7 +55,7 @@ export default function Hero({
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8 border border-cyan-400/30">
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 backdrop-blur-md mb-8 border border-cyan-400/30">
           <Sparkles size={16} className="text-cyan-400 animate-pulse" />
           <span className="text-sm text-gray-300">
             Disponible para trabajar
@@ -69,7 +69,7 @@ export default function Hero({
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}>
           <span className="block text-white mb-2">Hola, soy</span>
-          <span className="block gradient-text-cyan text-5xl sm:text-6xl md:text-8xl">
+          <span className="block bg-gradient-to-r from-cyan-400 to-cyan-500 bg-clip-text text-transparent text-5xl sm:text-6xl md:text-8xl">
             Dubán Alejandro
           </span>
           <span className="block text-white text-3xl sm:text-4xl md:text-5xl mt-2">
@@ -132,7 +132,7 @@ export default function Hero({
           <a
             href="#contact"
             onClick={(e) => onNavLinkClick(e, "#contact")}
-            className="px-8 py-4 glass text-white font-bold rounded-full border border-cyan-400/50 hover:bg-cyan-400/10 transition-all hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30">
+            className="px-8 py-4 bg-white/5 backdrop-blur-md text-white font-bold rounded-full border border-cyan-400/50 hover:bg-cyan-400/10 transition-all hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30">
             Contáctame
           </a>
         </motion.div>

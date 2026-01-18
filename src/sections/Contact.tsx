@@ -35,7 +35,9 @@ export default function Contact() {
           viewport={{ once: true }}
           className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="gradient-text-cyan">Conectemos</span>
+            <span className="bg-gradient-to-r from-cyan-400 to-cyan-500 bg-clip-text text-transparent">
+              Conectemos
+            </span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto rounded-full mb-6" />
           <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
@@ -74,7 +76,7 @@ export default function Contact() {
                     viewport={{ once: true }}
                     transition={{ delay: idx * 0.1 }}
                     whileHover={{ scale: 1.05, x: 10 }}
-                    className="flex items-center gap-4 glass p-4 rounded-xl border border-cyan-400/20 hover:border-cyan-400/50 transition-all group">
+                    className="flex items-center gap-4 bg-white/5 backdrop-blur-md p-4 rounded-xl border border-cyan-400/20 hover:border-cyan-400/50 transition-all group">
                     <div
                       className={`p-3 rounded-lg bg-gradient-to-br ${link.color} bg-opacity-20`}>
                       <Icon size={24} className="text-white" />
@@ -101,7 +103,7 @@ export default function Contact() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              className="glass p-6 rounded-xl border border-purple-400/20">
+              className="bg-white/5 backdrop-blur-md p-6 rounded-xl border border-purple-400/20">
               <p className="text-gray-300 leading-relaxed">
                 💼{" "}
                 <span className="text-purple-400 font-semibold">
