@@ -2,6 +2,35 @@ import type { Project } from "../components/ProjectCard";
 
 const projects: Project[] = [
   {
+    title: "Extrovertidos",
+    description:
+      "Plataforma social para descubrir panoramas, negocios y eventos. Incluye gestión de usuarios, publicación de panoramas y negocios, sistema de favoritos, notificaciones y panel de administración.",
+    tags: ["React", "TypeScript", "Node.js", "MySQL"],
+    image: "/Extrovertidos/Inicio.png",
+    screenshots: [
+      "/Extrovertidos/Inicio.png",
+      "/Extrovertidos/Inicio-Admin.png",
+      "/Extrovertidos/Carrousel .png",
+      "/Extrovertidos/Panoramas.png",
+      "/Extrovertidos/Panoramas-Admin.png",
+      "/Extrovertidos/Negocios .png",
+      "/Extrovertidos/Negocios-Admin.png",
+      "/Extrovertidos/Publicar-panorama.png",
+      "/Extrovertidos/Publicar-Negocio .png",
+      "/Extrovertidos/Perfil-Usuario-mis-publicaciones .png",
+      "/Extrovertidos/Favoritos .png",
+      "/Extrovertidos/Notificaciones.png",
+      "/Extrovertidos/Superguia .png",
+      "/Extrovertidos/Gestión-Usuarios .png",
+      "/Extrovertidos/Gestion_Categorias.png",
+      "/Extrovertidos/Gestion_Categorias_Negocios.png",
+      "/Extrovertidos/Gestion_Precios.png",
+      "/Extrovertidos/Logo_con_r.png",
+    ],
+    link: "https://www.extrovertidos.cl",
+    repo: "https://github.com/DubanPrograDVR/EXTROVERTIDOS",
+  },
+  {
     title: "Ruta Accesible",
     description:
       "Aplicativo inclusivo desarrollado en conjunto con la Municipalidad de Curicó. Permite a las personas encontrar recintos accesibles en la ciudad.",

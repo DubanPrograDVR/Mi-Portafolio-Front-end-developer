@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Code, Menu, X, Download } from "lucide-react";
-import CV from "../assets/Duban_Alejandro_Vasquez_Romero cv trabajo.pdf";
+import CV from "../assets/CV_Duban_Alejandro_Vasquez_Romero.pdf";
 
 type NavLink = { href: string; label: string };
 

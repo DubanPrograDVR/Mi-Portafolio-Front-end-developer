@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Download, Award, Heart, Code2 } from "lucide-react";
 import AnimatedSection from "../components/AnimatedSection";
-import CV from "../assets/Duban_Alejandro_Vasquez_Romero cv trabajo.pdf";
+import CV from "../assets/CV_Duban_Alejandro_Vasquez_Romero.pdf";
 import foto1 from "../assets/img/Ruta1.jpg";
 import foto2 from "../assets/img/Ruta2.jpg";
 
