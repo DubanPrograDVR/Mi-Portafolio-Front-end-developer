@@ -1,18 +1,21 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Sparkles } from "lucide-react";
+import { ExternalLink, Github, Sparkles, Images } from "lucide-react";
+import ProjectCarousel from "./ProjectCarousel";
 
 export type Project = {
   title: string;
   description: string;
   tags: string[];
   image?: string;
+  screenshots?: string[];
   link?: string;
   repo?: string;
 };
 
 export default function ProjectCard({ project }: { project: Project }) {
   const ref = useRef<HTMLDivElement | null>(null);
+  const [carouselOpen, setCarouselOpen] = useState(false);
 
   const onMove = (e: React.MouseEvent) => {
     if (!ref.current) return;
@@ -107,8 +110,16 @@ export default function ProjectCard({ project }: { project: Project }) {
 
           {/* Botones de acción */}
           <div
-            className="flex items-center gap-4 mt-auto relative z-10"
+            className="flex flex-wrap items-center gap-3 mt-auto relative z-10"
             style={{ transform: "translateZ(30px)" }}>
+            <motion.button
+              onClick={() => setCarouselOpen(true)}
+              whileHover={{ scale: 1.05, x: 5 }}
+              whileTap={{ scale: 0.95 }}
+              className="flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg font-semibold shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 transition-all cursor-pointer">
+              <Images size={18} />
+              Ver capturas
+            </motion.button>
             {project.link && (
               <motion.a
                 href={project.link}
@@ -142,6 +153,14 @@ export default function ProjectCard({ project }: { project: Project }) {
 
       {/* Sombra glow animada */}
       <div className="absolute inset-0 -z-10 bg-gradient-to-br from-cyan-500/20 via-purple-500/20 to-pink-500/20 rounded-2xl blur-2xl opacity-0 group-hover:opacity-70 transition-opacity duration-500" />
+
+      {/* Carrusel de capturas */}
+      <ProjectCarousel
+        isOpen={carouselOpen}
+        onClose={() => setCarouselOpen(false)}
+        images={project.screenshots ?? []}
+        title={project.title}
+      />
     </motion.div>
   );
 }

@@ -7,7 +7,6 @@ import About from "./sections/About";
 import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
-import Timeline from "./sections/Timeline";
 import MoreAboutMe from "./sections/MoreAboutMe";
 import WhatsAppButton from "./components/WhatsAppButton";
 
@@ -31,9 +30,8 @@ export default function App() {
         <Hero onNavLinkClick={onNavLinkClick} />
         <About />
         <MoreAboutMe />
-        <Timeline />
-        <Skills />
         <Projects />
+        <Skills />
         <Contact />
       </main>
 
