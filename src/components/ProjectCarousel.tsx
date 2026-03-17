@@ -160,6 +160,6 @@ export default function ProjectCarousel({
         </motion.div>
       )}
     </AnimatePresence>,
-    document.body
+    document.body,
   );
 }
