@@ -105,9 +105,12 @@ export default function ProjectCarousel({
               ) : (
                 <div className="flex flex-col items-center justify-center h-64 text-center px-8">
                   <Images size={48} className="text-gray-600 mb-4" />
-                  <p className="text-gray-400 text-lg font-semibold">Próximamente</p>
+                  <p className="text-gray-400 text-lg font-semibold">
+                    Próximamente
+                  </p>
                   <p className="text-gray-500 text-sm mt-2">
-                    Las capturas de pantalla de este proyecto estarán disponibles pronto.
+                    Las capturas de pantalla de este proyecto estarán
+                    disponibles pronto.
                   </p>
                 </div>
               )}
